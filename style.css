@@ -1,0 +1,219 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Style */
+header {
+    background-color: #004225; /* British Racing Green */
+    padding: 10px 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 1.8em;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h2 {
+    color: #004225;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn-cta {
+    background-color: #004225;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-cta:hover {
+    background-color: #0078d4;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Features Section */
+#features {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#features h2 {
+    color: #004225;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+.feature-box img {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.feature-box h3 {
+    color: #004225;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Testimonial Section */
+#testimonial {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#testimonial h2 {
+    color: #004225;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #555;
+}
+
+cite {
+    display: block;
+    margin-top: 10px;
+    color: #004225;
+}
+
+/* Download Section */
+#download {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#download h2 {
+    color: #004225;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.download-buttons a {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.download-buttons img {
+    width: 150px;
+    transition: transform 0.3s;
+}
+
+.download-buttons img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #004225;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Animation */
+#hero, #features, #testimonial, #download {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+#hero {
+    animation-delay: 0s;
+}
+
+#features {
+    animation-delay: 0.5s;
+}
+
+#testimonial {
+    animation-delay: 1s;
+}
+
+#download {
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
